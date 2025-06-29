@@ -1,0 +1,25 @@
+.contact-links {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+    display: flex; /* Changed from block to flex for icon centering */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    margin: 0 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.social-icon:hover {
+    color: var(--bg-color);
+    background-color: var(--accent-color);
+}
