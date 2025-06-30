@@ -9,9 +9,9 @@
 
 .blurb {
   display: flex;
+  flex: 2;
   flex-direction: column;
   margin: 0rem 1rem;
-  width: 60%;
 }
 
 .emphasis-text {

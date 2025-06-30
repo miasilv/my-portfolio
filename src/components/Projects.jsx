@@ -25,7 +25,7 @@ function Projects() {
     {
       title: "Marina's Sorcery Service",
       description: "I developped an indie video game and was responsible for all programming. I also managed a small interdisciplinary team, coordinating with a writer and an artist to ensure a cohesive narrative and visual style. I implemented complex game systems, including a robust inventory system with dynamic item management, an engaging potion-making mechanic that allowed for recipe discovery and player experimentation, and a dynamic story progression system that adapted to player choices and supported branching narratives.",
-      tags: ["Unity", "C#", "Team Leadership", ""],
+      tags: ["Unity", "C#", "Leadership"],
       image: Marina,
       github: "https://github.com/miasilv/Marinas-Sorcery-Service",
       live: "https://miasilv.itch.io/marinas-sorcery-service"

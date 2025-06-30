@@ -21,7 +21,7 @@
 }
 .form-group {
   margin-bottom: 1.5rem;
-  width: 90%;
+  width: 100%;
 }
 .contact-form {
   display: flex;
@@ -38,7 +38,7 @@
 }
 .form-group input,
 .form-group textarea {
-  width: 100%;
+  width: 93%;
   padding: 1rem 1rem;
   border: 1px solid var(--secondary-color);
   border-radius: 0.375rem;

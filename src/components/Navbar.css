@@ -22,6 +22,13 @@
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: 750px) {
+  .navbar-link {
+      display: none;
+  }
+}
+
 .navbar-list li {
   align-self: center;
 }
