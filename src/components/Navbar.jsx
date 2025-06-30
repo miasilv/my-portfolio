@@ -26,7 +26,7 @@ function Navbar() {
           </a> 
         </li>
         <li> 
-          <a href="/assets/documents/resume.pdf" className="button" target="_blank" rel="noopener noreferrer"> 
+          <a href={import.meta.env.BASE_URL + "/assets/documents/resume.pdf"} className="button" target="_blank" rel="noopener noreferrer"> 
             Resume 
           </a> 
         </li>

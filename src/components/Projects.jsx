@@ -20,7 +20,7 @@ function Projects() {
       description: "In a Human-Computer Interaction research project, I focused on improving the usability and UI design of ALLURE, a digital 3D Rubik's Cube platform for K-12 education. My responsibilities included conducting usability tests, analyzing user feedback, and refining the user interface to enhance clarity and touchscreen compatibility. This work aimed to create a more intuitive and engaging learning experience, addressing user needs for a tactile-like interaction in a digital environment.",
       tags: ["Web Development", "VR Development", "UI/UX Design", "Usability Testing", "User Research", "Data Analysis"],
       image: Research,
-      live: "/assets/documents/researchPoster.pdf"
+      live: import.meta.env.BASE_URL + "/assets/documents/researchPoster.pdf"
     },
     {
       title: "Marina's Sorcery Service",
