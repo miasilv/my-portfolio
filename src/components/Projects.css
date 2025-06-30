@@ -1,74 +1,86 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+@media (min-width: 768px) { /* md:grid-cols-2 */
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) { /* lg:grid-cols-3 */
+  .projects-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .project-card {
-    background-color: var(--bg-color); /* bg-warm-white */
-    border-radius: 0.5rem; /* rounded-lg */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
-    overflow: hidden;
-    border: 1px solid var(--primary-shadow); /* border border-primary-purple-light */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* hover:shadow-xl transform hover:-translate-y-2 */
+  background-color: var(--bg-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid var(--primary-shadow);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .project-card:hover {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
-    transform: translateY(-8px); /* -translate-y-2 */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-8px);
 }
 .project-card img {
-    width: 100%;
-    height: 12rem; /* h-48 */
-    object-fit: cover;
-    border-top-left-radius: 0.5rem; /* rounded-t-lg */
-    border-top-right-radius: 0.5rem; /* rounded-t-lg */
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 .project-card-content {
-    padding: 1.5rem; /* p-6 */
+  padding: 1.5rem;
 }
 .project-card-content h3 {
-    font-size: 1.5rem; /* text-2xl */
-    font-weight: bold;
-    color: var(--primary-color); /* text-primary-purple */
-    margin-bottom: 0.75rem; /* mb-3 */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
 }
 .project-card-content p {
-    color: var(--secondary-color); /* text-secondary-blue */
-    margin-bottom: 1rem; /* mb-4 */
-    font-family: var(--font-mono);
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  font-family: var(--font-mono);
 }
 .project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem; /* gap-2 */
-    margin-bottom: 1rem; /* mb-4 */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 .project-tags span {
-    background-color: var(--primary-shadow); /* bg-primary-purple-light */
-    color: var(--primary-color); /* text-primary-purple */
-    font-size: 0.875rem; /* text-sm */
-    font-weight: 500; /* font-medium */
-    padding: 0.25rem 0.75rem; /* px-3 py-1 */
-    border-radius: 9999px; /* rounded-full */
-    font-family: var(--font-mono);
+  background-color: var(--primary-shadow);
+  color: var(--primary-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-family: var(--font-mono);
 }
 .project-links {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem; /* space-x-4 */
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 .project-links a {
-    color: var(--accent-color); /* text-accent-orange */
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease; /* transition-colors duration-200 */
-    font-family: var(--font-sans);
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  font-family: var(--font-sans);
+  text-decoration: none;
 }
 .project-links a:hover {
-    color: var(--primary-color); /* hover:text-primary-purple */
+  color: var(--primary-color);
 }
 .project-links a.github-link {
-    color: var(--secondary-color); /* text-secondary-blue */
+  color: var(--secondary-color);
 }
 .project-links a.github-link:hover {
-    color: var(--primary-color); /* hover:text-primary-purple */
-}
-.project-links svg {
-    width: 1.25rem; /* w-5 */
-    height: 1.25rem; /* h-5 */
-    margin-right: 0.25rem; /* mr-1 */
+  color: var(--primary-color);
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import './Projects.css';
 
 const ProjectCard = ({ project }) => {
   return (
@@ -18,12 +17,16 @@ const ProjectCard = ({ project }) => {
         ))}
       </div>
       <div className="project-links">
-        <a href="#" aria-label={`View Live demo of ${project.title}`}>
-          <i className="ti-new-window"></i>View Live
-        </a>
-        <a href="https://github.com/miasilv" className="github-link" aria-label={`View ${project.title} on GitHub`}>
-          <i className="ti-github"></i> Github
-        </a>
+        {project.live && (
+          <a href={project.live} target="_blank" rel="noopener noreferrer" aria-label={`View Live demo of ${project.title}`}>
+            <i className="ti-new-window"></i>View
+          </a>
+        )}
+        {project.github && (
+          <a href={project.github} className="github-link" target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} on GitHub`}>
+            <i className="ti-github"></i> Github
+          </a>
+        )}
       </div>
     </div>
   </div>
